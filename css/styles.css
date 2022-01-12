@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+div p {
+    color: rgb(46, 46, 48);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2rem;
+    color: black
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bakbak One', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-nav {
+    width: 25%;
+    float: left;
+    background-color: darkcyan;
+    height: 330vh;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Otras clases */
+
+header {
+    height: 100vh;
+    background-image: url("../img/marek-piwnicki-rlWdnNGsT1s-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.flex {
+    display: flex;
+    /*permite mover el objeto, no hace nada*/
+    align-items: center;
+    /*alinea verticalmente */
+    justify-content: center;
+    /*alinea horizontalmente*/
+}
+
+
+/*hace que las fotos ocupen el máximo de sus respectivos div (sus padres) y no ocupne de más y no se vea bien */
+
+img {
+    width: 100%;
+}
+
+#card-1 {
+    background-image: url("../img/stephen-leonardi-WMLKSHoHx2E-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#card-2 {
+    background-image: url("../img/sir-manuel-c96mJ5iec7k-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+#card-3 {
+    background-image: url("../img/fotis-fotopoulos-vkNyPpTg27E-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+#card-4 {
+    background-image: url("../img/erik-skof-5tOkn0T5z5o-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+#card-5 {
+    background-image: url("../img/hamdhulla-shakeeb-2vDYo-3kZ3A-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+#card-6 {
+    background-image: url("../img/benaja-germann-LlvkUwwoA7s-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+#card-7 {
+    background-image: url("../img/hello-i-m-nik-IVTMne6y6Xk-unsplash.jpg");
+    background-position: center;
+    background-size: contain;
+    height: 60vh;
+}
+
+.padding-s {
+    padding: 5%;
+}
+
+.padding-n {
+    padding: 2%;
+}
+
+.padding-m {
+    padding-left: 2%;
+}
+
+.black-white {
+    background-color: rgb(109, 159, 198);
+}
+
+footer {
+    margin: 0;
+    background-color: rgb(1, 15, 17);
+    padding: 1%;
+}
+
+article {
+    padding: 1%;
+    background-color: cadetblue;
+}
+
+footer div {
+    color: rgb(248, 168, 168);
+}
+
+footer div p {
+    color: floralwhite;
+}
+
+footer p {
+    color: floralwhite;
+}
+
+@media only screen and (max-width: 800px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    .column-nav {
+        width: 100%;
+        height: 50vh;
+    }
+    .column-75 {
+        width: 100%;
+    }
+}
